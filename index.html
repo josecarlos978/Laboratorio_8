@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechAndes - Soluciones Web e Inteligencia Artificial</title>
+  <style>
+    /* ---------------------------
+       ESTILOS GENERALES CREADO CON CHATGPT
+    ----------------------------*/
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2, h3 {
+      color: #002b5c;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ---------------------------
+       HEADER Y NAVBAR
+    ----------------------------*/
+    header {
+      background-color: #002b5c;
+      color: #fff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00c4ff;
+    }
+
+    /* ---------------------------
+       HERO SECTION
+    ----------------------------*/
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      color: #e6f2ff;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .cta-buttons a {
+      background: #00c4ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin: 5px;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background: #009dcf;
+    }
+
+    /* ---------------------------
+       SERVICIOS
+    ----------------------------*/
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* ---------------------------
+       SOBRE NOSOTROS
+    ----------------------------*/
+    .about {
+      background-color: #e6f2ff;
+      border-radius: 10px;
+      padding: 40px;
+      width: 1200px;
+      margin: auto;
+    }
+
+    .about h2 {
+      color: #002b5c;
+    }
+
+    .about p {
+      line-height: 1.6;
+    }
+
+    /* ---------------------------
+       CONTACTO
+    ----------------------------*/
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+
+    /* ---------------------------
+       FOOTER
+    ----------------------------*/
+    footer {
+      background-color: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="./logoTA.png" alt="Logo TechAndes">
+      <h2>TechAndes</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <h1>Impulsa tu negocio con soluciones digitales inteligentes</h1>
+    <p>Desarrollamos páginas web, automatizaciones y software con IA para hacer crecer tu empresa.</p>
+    <div class="cta-buttons">
+      <a href="#contacto">Solicita una cotización</a>
+      <a href="#servicios">Conoce nuestros servicios</a>
+    </div>
+  </section>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>TechAndes</strong> somos una empresa peruana dedicada al desarrollo de soluciones tecnológicas innovadoras. Ayudamos a empresas y profesionales a modernizar sus procesos mediante herramientas digitales, automatización e inteligencia artificial.</p>
+    <p><strong>Misión:</strong> Empresa dedicada al desarrollo de soluciones tecnológicas, automatización de procesos y creación de software con inteligencia artificial.</p>
+    <p><strong>Visión:</strong> Ser líderes en innovación tecnológica en Latinoamérica.</p>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2 style="text-align:center;">Nuestros Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="Desarrollo web">
+        <h3>Desarrollo Web y Software a Medida</h3>
+        <p>Creamos sitios web y aplicaciones empresariales personalizadas para cada tipo de negocio.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="Automatización">
+        <h3>Automatización de Procesos</h3>
+        <p>Optimizamos tareas repetitivas mediante herramientas que mejoran la productividad y reducen errores.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80" alt="Inteligencia Artificial">
+        <h3>Inteligencia Artificial Aplicada</h3>
+        <p>Implementamos IA en tus procesos: chatbots, análisis predictivo y asistentes virtuales inteligentes.</p>
+      </div>
+      <div class="service">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Soluciones integrales">
+        <h3>Soluciones Digitales Integrales</h3>
+        <p>Desde la planificación y diseño, hasta la implementación, mantenimiento y soporte continuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto">
+    <h2 style="text-align:center;">Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea rows="5" placeholder="Mensaje o requerimiento" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 TechAndes – Soluciones Web e Inteligencia Artificial</p>
+    <p>📧 contacto@techandes.com | 📱 +51 999 999 999 | Lima, Perú</p>
+  </footer>
+
+</body>
+</html>
+
